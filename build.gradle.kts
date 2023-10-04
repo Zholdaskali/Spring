@@ -25,10 +25,11 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	runtimeOnly("com.h2database:h2")
+	runtimeOnly("com.h2database:h2:2.1.214")
 	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
+
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
